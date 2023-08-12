@@ -3,15 +3,15 @@ const path = require('path')
 
 const app = express()
 
-app.use('/', (req, res)=>{
+app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, 'layouts/index.html'))
 })
 
-app.use('/about', (req, res)=>{
+app.get('/about', (req, res)=>{
     res.sendFile(path.join(__dirname, 'layouts/about.html'))
 })
 
-app.use('/contact', (req, res)=>{
+app.get('/contact', (req, res)=>{
     res.sendFile(path.join(__dirname, 'layouts/contact.html'))
 })
 
