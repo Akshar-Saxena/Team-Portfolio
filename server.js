@@ -8,7 +8,11 @@ app.use('/', (req, res)=>{
 })
 
 app.use('/about', (req, res)=>{
-    res.send('About')
+    res.sendFile(path.join(__dirname, 'layouts/about.html'))
+})
+
+app.use('/contact', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'layouts/contact.html'))
 })
 
 app.listen(process.env.PORT || 3000, ()=>{

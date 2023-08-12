@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        body{
+            background-color: #D8FBF1;
+        }
+
+        nav {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            color: white;
+            z-index: 1;
+            box-shadow: 0 3px 30px black;
+            /* outline: 1px solid gray; */
+            /* background-color: rebeccapurple; */
+        }
+
+        .left,
+        .right {
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column-reverse; */
+            width: 35%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            /* background-color: aliceblue; */
+        }
+
+        .center img {
+            filter: drop-shadow(0px 20px 30px white);
+            /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+            width: 150px;
+        }
+
+        .left ul,
+        .right ul {
+            /* background-color: red; */
+            display: flex;
+            list-style-type: none;
+        }
+
+        .left ul li a,
+        .right ul li a {
+            padding: 0 1.6rem;
+            text-decoration: none;
+            color: white;
+            font-family: 'inria sans';
+        }
+
+        .left ul li a:hover,
+        .right ul li a:hover {
+            color: grey;
+            border-bottom: 1px solid black;
+        }
+
+        .sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5rem;
+            width: 80%;
+            margin: auto;
+            font-family: 'josefin slab';
+        }
+
+        .sec p, .sec h1 {
+            text-align: justify;
+            font-family: 'josefin slab';
+        }
+
+        .sec2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rightSec2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+        }
+
+        .rightSec2 img{
+            padding: 2rem 2rem;
+            width: 3.7rem;
+        }
+
+        .leftSec2{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leftSec2 input{
+            height: 1.7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolios</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <img src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...OCqBJLnhjOwXs1M3EMoAJtliksgfZo...Po5"
+                alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sec">
+        <h1>Contact Us</h1>
+        <div class="sec2">
+            <div class="leftSec2">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <br>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                    <br>
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </div>
+            <div class="rightSec2">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/11515/11515930.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
