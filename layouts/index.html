@@ -8,11 +8,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
         * {
             padding: 0;
             margin: 0;
         }
+
+        body {
+            background-color: #99badd;
+        }
+
 
         nav {
             padding: 10px 0;
@@ -22,7 +28,8 @@
             width: 100%;
             position: sticky;
             top: 0;
-            background-color: white;
+            color: white;
+            background-color: black;
             z-index: 1;
             box-shadow: 0 3px 30px black;
             /* outline: 1px solid gray; */
@@ -45,10 +52,18 @@
             /* background-color: aliceblue; */
         }
 
-        .center img{
-            filter: drop-shadow(0 10px 10px rgb(195, 195, 195));
-            width: 150px;
+        .center #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'amatic sc';
         }
+
+        .center #logo img {
+            width: 50px;
+        }
+
 
         .left ul,
         .right ul {
@@ -61,12 +76,12 @@
         .right ul li a {
             padding: 0 1.6rem;
             text-decoration: none;
-            color: black;
+            color: white;
             font-family: 'inria sans';
         }
 
         .left ul li a:hover,
-        .right ul li a:hover{
+        .right ul li a:hover {
             color: grey;
             border-bottom: 1px solid black;
         }
@@ -92,7 +107,7 @@
             font-weight: 800;
         }
 
-        .section{
+        .section {
             margin: 50px 0;
             display: flex;
             justify-content: center;
@@ -102,7 +117,7 @@
         #welcomeNote {
             width: 60%;
             text-align: justify;
-            
+
         }
 
         #heading {
@@ -110,106 +125,131 @@
             font-weight: 700;
             font-family: 'josefin slab';
         }
-        
+
         #content {
             font-size: 1.2rem;
             font-family: 'josefin slab';
         }
 
-        .lastSection{
+        .lastSection {
             display: flex;
             flex-direction: row;
             justify-content: center;
             width: 100%;
         }
 
-        .img{
+        .img {
             display: flex;
             justify-content: center;
         }
 
-        .img img{
+        .img img {
             /* margin: auto; */
             position: relative;
             width: 60%;
         }
 
-        .lastSection h1{
+        .lastSection h1 {
             margin-top: 20px;
             position: absolute;
             color: white;
             font-family: 'josefin slab';
         }
 
-        @media only screen and (max-width: 700px){
-            .left ul li a, .right ul li a{
+        @media only screen and (max-width: 700px) {
+
+            .left ul li a,
+            .right ul li a {
                 font-size: 0.7rem;
             }
-            .center img{
+
+            .center img {
                 width: 100px;
             }
-            #textOver #element{
+
+            #textOver #element {
                 font-size: 2rem;
             }
-            #heading{
+
+            #heading {
                 font-size: 1.5rem;
             }
-            #content{
+
+            #content {
                 font-size: 0.8rem;
             }
-            .lastSection h1{
+
+            .lastSection h1 {
                 font-size: 1.2rem;
             }
         }
-        @media only screen and (max-width: 590px){
-            .left ul li a, .right ul li a{
+
+        @media only screen and (max-width: 590px) {
+
+            .left ul li a,
+            .right ul li a {
                 font-size: 0.5rem;
             }
-            .center img{
+
+            .center img {
                 width: 100px;
             }
-            .left ul li a, .right ul li a{
+
+            .left ul li a,
+            .right ul li a {
                 padding: 0 0.8rem;
             }
         }
-        @media only screen and (max-width: 500px){
-            #textOver #element{
+
+        @media only screen and (max-width: 500px) {
+            #textOver #element {
                 font-size: 1.4rem;
             }
-            #heading{
+
+            #heading {
                 font-size: 1rem;
             }
-            #content{
+
+            #content {
                 font-size: 0.7rem;
             }
         }
-        @media only screen and (max-width: 350px){
-            .center img{
+
+        @media only screen and (max-width: 350px) {
+            .center img {
                 width: 60px;
             }
-            .left ul li a, .right ul li a{
+
+            .left ul li a,
+            .right ul li a {
                 padding: 0 0.3rem;
                 font-size: 0.4rem;
             }
-            .section{
+
+            .section {
                 line-height: 0.45rem;
             }
         }
-        @media only screen and (max-width: 290px){
-            #textOver #element{
+
+        @media only screen and (max-width: 290px) {
+            #textOver #element {
                 font-size: 0.8rem;
                 left: 0.5rem;
             }
-            .section{
+
+            .section {
                 line-height: 0.2rem;
             }
-            #heading{
+
+            #heading {
                 font-size: 0.7rem;
             }
-            #content{
+
+            #content {
                 font-size: 0.4rem;
             }
-            .lastSection h1{
+
+            .lastSection h1 {
                 font-size: 0.8rem;
             }
         }
@@ -226,7 +266,12 @@
             </ul>
         </div>
         <div class="center">
-            <img src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...OCqBJLnhjOwXs1M3EMoAJtliksgfZo...Po5" alt="">
+            <div id="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/610/610021.png" alt="">
+                <h1>
+                    Creative Pinncale Portfolios
+                </h1>
+            </div>
         </div>
         <div class="right">
             <ul>
@@ -238,7 +283,8 @@
     <!-- Nav ends -->
 
     <div class="bg">
-        <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-multi-ethnic-business-people-working-with-laptop-computer-in-modern-office-serious-men-and-women-working-remote-in-coworking-focused-workers-team-typing-laptops-on-workplace-in-open-space-office_hcr1aobsv_thumbnail-1080_01.png" alt="">
+        <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-multi-ethnic-business-people-working-with-laptop-computer-in-modern-office-serious-men-and-women-working-remote-in-coworking-focused-workers-team-typing-laptops-on-workplace-in-open-space-office_hcr1aobsv_thumbnail-1080_01.png"
+            alt="">
         <div id="textOver">
             <span id="element"></span>
         </div>
