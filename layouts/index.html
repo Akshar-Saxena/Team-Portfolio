@@ -156,6 +156,26 @@
             font-family: 'josefin slab';
         }
 
+        @media only screen and (max-width: 1100px){
+            #textOver #element{
+                font-size: 3rem;
+            }
+        }
+
+        @media only screen and (max-width: 860px){
+            #textOver #element{
+                font-size: 2rem;
+            }
+
+            .center #logo img{
+                width: 40px;
+            }
+
+            .center h1{
+                font-size: 0.8rem;
+            }
+        }
+
         @media only screen and (max-width: 700px) {
 
             .left ul li a,
@@ -215,6 +235,21 @@
             }
         }
 
+        @media only screen and (max-width: 420px){
+            #textOver #element{
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 380px){
+            .center #logo h1{
+                font-size: 0.6rem;
+            }
+            .center #logo img{
+                width: 20px;
+            }
+        }
+
         @media only screen and (max-width: 350px) {
             .center img {
                 width: 60px;
@@ -252,6 +287,16 @@
             .lastSection h1 {
                 font-size: 0.8rem;
             }
+
+            .center #logo h1{
+                font-size: 0.4rem;
+            }
+        }
+
+        @media only screen and (max-width: 250px){
+            #textOver #element{
+                font-size: 0.6rem;
+            }
         }
     </style>
 
@@ -262,7 +307,7 @@
         <div class="left">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="">Portfolios</a></li>
+                <li><a href="/portfolios">Portfolios</a></li>
             </ul>
         </div>
         <div class="center">
@@ -315,8 +360,8 @@
     <script>
         var typed = new Typed('#element', {
             strings: [' Welcome to Creative Pinnacle Portfolios', ' A Team Portfolio Website'],
-            typeSpeed: 100,
-            backSpeed: 100,
+            typeSpeed: 30,
+            backSpeed: 10,
             showCursor: false,
             loop: true
         });

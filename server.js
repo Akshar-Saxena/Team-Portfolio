@@ -15,6 +15,10 @@ app.get('/contact', (req, res)=>{
     res.sendFile(path.join(__dirname, 'layouts/contact.html'))
 })
 
+app.get('/portfolios', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'layouts/portfolios.html'))
+})
+
 app.listen(process.env.PORT || 3000, ()=>{
     console.log('Listening on port 3000')
 })

@@ -10,16 +10,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
-
-
         * {
             padding: 0;
             margin: 0;
         }
 
-        *:focus {
-            outline: none;
-        }
 
 
         body {
@@ -70,7 +65,6 @@
             width: 50px;
         }
 
-
         .left ul,
         .right ul {
             /* background-color: red; */
@@ -89,57 +83,42 @@
         .left ul li a:hover,
         .right ul li a:hover {
             color: grey;
-            border-bottom: 1px solid black;
         }
 
         .sec {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding-top: 5rem;
-            width: 80%;
+            width: 60%;
             margin: auto;
-            font-family: 'josefin slab';
         }
 
-        .sec p,
         .sec h1 {
             text-align: justify;
             font-family: 'josefin slab';
         }
 
-        .sec2 {
-            width: 100%;
+        .container{
+            margin: auto;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
         }
 
-        .rightSec2 {
+        .card{
+            margin: 2rem 2rem;
             display: flex;
-            flex-wrap: wrap;
-            width: 30%;
-        }
-
-        .rightSec2 img {
-            padding: 2rem 2rem;
-            width: 3.7rem;
-            filter: drop-shadow(0 0 20px cyan);
-            /* box-shadow: 0 10px 10px black; */
-        }
-
-        .leftSec2 {
-            width: 40%;
-            display: flex;
+            /* justify-content: center;
+            align-items: center; */
             flex-direction: column;
+            width: 18rem;
         }
-
-        .leftSec2 input {
-            height: 1.7rem;
+        .card h2{
             font-family: 'josefin slab';
-            font-weight: 700;
-            padding: 2px 5px;
+            text-align: center;
+        }
+        .container :hover{
+            outline: 1px solid black;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -153,6 +132,8 @@
             </ul>
         </div>
         <div class="center">
+            <!-- <img src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...OCqBJLnhjOwXs1M3EMoAJtliksgfZo...Po5"
+                alt=""> -->
             <div id="logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/610/610021.png" alt="">
                 <h1>
@@ -169,23 +150,27 @@
     </nav>
 
     <div class="sec">
-        <h1>Contact Us</h1>
-        <div class="sec2">
-            <div class="leftSec2">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <br>
-                <label for="mail">Email</label>
-                <input type="email" id="mail">
-                <br>
-                <label for="msg">Message</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <h1>Portfolios</h1>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
+                <h2>Meghna Sharma</h2>
+                <p></p>
             </div>
-            <div class="rightSec2">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="">
-                <img src="https://cdn-icons-png.flaticon.com/512/11515/11515930.png" alt="">
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                <h2>Akshar Saxena</h2>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                <h2>Amulya Gupta</h2>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                <h2>Gopal Goel</h2>
+                <p></p>
             </div>
         </div>
     </div>
